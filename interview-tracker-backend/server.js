@@ -5,7 +5,9 @@ require('dotenv').config()
 
 
 const app = express()
-app.use(cors())
+app.use(cors({
+    origin: 'https://luxury-tapioca-f29a84.netlify.app'
+}))
 app.use(express.json())
 
 // Routes
