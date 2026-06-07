@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const API = axios.create({
-  baseURL: 'http://localhost:5000/api'
+const API = axios.create({   
+    baseURL: 'https://interview-tracker-2iqx.onrender.com/api'
 })
 
 export const getApplications = () => API.get('/applications')
